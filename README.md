@@ -45,6 +45,30 @@ My contribution to **Saksi's national-level hackathon winning team** was UI desi
 **Core focus:** Flutter and mobile UI implementation, video editing, colour grading, and sound design.  
 **Project experience:** React Native, Firebase, FastAPI, and Supabase.
 
+### My contribution trail
+
+A little progress, one contribution at a time. The snake follows my GitHub contribution calendar and refreshes daily.
+
+<p>
+  <img src="./assets/contribution-snake.svg" width="100%" alt="Animated snake moving through Nabin Paudel's real GitHub contribution calendar, refreshed daily." />
+</p>
+
+### From idea to experience
+
+I enjoy the whole creative journey: understanding the problem, shaping the interface, building it, and refining the details.
+
+<p>
+  <img src="./assets/creative-process.svg" width="100%" alt="Animated creative loop: explore, design, build, refine." />
+</p>
+
+### Where code meets cinema
+
+Whether I'm working on a mobile screen or a video timeline, I care about clarity, rhythm, and how the final experience feels.
+
+<p>
+  <img src="./assets/creative-studio.svg" width="100%" alt="Animated Flutter terminal, video editing playhead, and sound waveform — two creative worlds with one eye for detail." />
+</p>
+
 <br />
 
 <img src="./assets/footer.svg" width="100%" alt="Always learning. Always creating. Design, build, refine." />

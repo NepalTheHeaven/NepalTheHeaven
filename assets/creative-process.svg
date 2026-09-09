@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="290" viewBox="0 0 1200 290" role="img" aria-labelledby="title">
+<title id="title">My creative process: explore, design, build, refine. Animated connections travel between the four stages.</title>
+<style>text{font-family:Arial,Helvetica,sans-serif}.mono{font-family:Consolas,Menlo,monospace}@media(prefers-reduced-motion:reduce){*{animation:none!important}}</style>
+
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#102233"/><stop offset="1" stop-color="#121b30"/></linearGradient>
+<linearGradient id="signal"><stop stop-color="#6de6d1"/><stop offset="1" stop-color="#b4a5ff"/></linearGradient></defs>
+<style>
+@keyframes signal{to{stroke-dashoffset:-1040}}
+@keyframes pulse{0%,18%,100%{opacity:.16}8%{opacity:.7}}
+.signal{animation:signal 9s linear infinite}.halo{animation:pulse 9s ease-in-out infinite}.h2{animation-delay:2.25s}.h3{animation-delay:4.5s}.h4{animation-delay:6.75s}
+</style>
+<rect x="1" y="1" width="1198" height="288" rx="20" fill="url(#bg)" stroke="#2b4056"/>
+<text x="42" y="44" fill="#78dfcf" font-size="14" font-weight="700" letter-spacing="2">THE CREATIVE LOOP</text>
+<text x="1157" y="44" text-anchor="end" fill="#94a8c1" class="mono" font-size="13">CURIOSITY → CLARITY → CRAFT</text>
+<path d="M149 130H1050" fill="none" stroke="#34445b" stroke-width="2"/>
+<path class="signal" d="M149 130H1050" fill="none" stroke="url(#signal)" stroke-width="3" stroke-dasharray="70 970"/>
+<g transform="translate(150 130)"><circle class="halo" r="49" fill="#67e0c9" opacity=".16"/><circle r="35" fill="#173d43" stroke="#62ddca"/><circle cx="-3" cy="-3" r="10" fill="none" stroke="#a2f6e5" stroke-width="3"/><path d="M5 5L14 14" stroke="#a2f6e5" stroke-width="3" stroke-linecap="round"/></g>
+<g transform="translate(450 130)"><circle class="halo h2" r="49" fill="#83c3ff" opacity=".16"/><circle r="35" fill="#223850" stroke="#86bff6"/><path d="M-16-16H16V16H-16Z" fill="none" stroke="#b5d8ff" stroke-width="2"/><path d="M-16-5H16M-5-5V16" stroke="#b5d8ff" stroke-width="2"/><rect x="-19" y="-19" width="6" height="6" rx="1" fill="#b5d8ff"/><rect x="13" y="13" width="6" height="6" rx="1" fill="#b5d8ff"/></g>
+<g transform="translate(750 130)"><circle class="halo h3" r="49" fill="#b3a0ff" opacity=".16"/><circle r="35" fill="#302d4c" stroke="#ae9eef"/><path d="M-12-10L-22 0-12 10M12-10L22 0 12 10M5-16L-5 16" stroke="#d1c4ff" stroke-width="2.8" fill="none" stroke-linecap="round"/></g>
+<g transform="translate(1050 130)"><circle class="halo h4" r="49" fill="#edca86" opacity=".16"/><circle r="35" fill="#39352f" stroke="#e2c48c"/><path d="M-14 2L-3 13 17-12" stroke="#f7deb0" stroke-width="3" fill="none" stroke-linecap="round"/></g>
+<g text-anchor="middle" font-size="23" font-weight="700" fill="#e6effa"><text x="150" y="206">Explore</text><text x="450" y="206">Design</text><text x="750" y="206">Build</text><text x="1050" y="206">Refine</text></g>
+<g text-anchor="middle" font-size="16" fill="#9db2ca"><text x="150" y="235">Understand the problem</text><text x="450" y="235">Make the flow feel clear</text><text x="750" y="235">Turn the idea into reality</text><text x="1050" y="235">Give the details their time</text></g>
+</svg>
