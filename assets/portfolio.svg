@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="580" height="310" viewBox="0 0 580 310" role="img" aria-labelledby="title desc">
+<title id="title">The creative side — Mobile projects and visual storytelling, brought together in one portfolio.</title><desc id="desc">Original illustration for Nabin Paudel's GitHub profile.</desc>
+<style>text{font-family:Arial,Helvetica,sans-serif}.mono{font-family:Consolas,Menlo,monospace}@media(prefers-reduced-motion:reduce){*{animation:none!important}.role2,.role3{opacity:0!important}.role1{opacity:1!important}}</style>
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#112035"/><stop offset="1" stop-color="#0c1423"/></linearGradient></defs>
+<rect x="1" y="1" width="578" height="308" rx="18" fill="url(#bg)" stroke="#2a3d53"/>
+<path d="M29 42H65" stroke="#b0a4ff" stroke-width="3"/>
+<text x="29" y="71" fill="#b0a4ff" font-size="13" font-weight="700" letter-spacing="2">02 / CODE MEETS CINEMA</text>
+<g transform="translate(407 28)"><rect x="19" y="23" width="115" height="78" rx="10" fill="#282743" stroke="#9c96d7"/><path d="M26 43H127" stroke="#555474"/><circle cx="33" cy="34" r="3" fill="#bdacf4"/><circle cx="45" cy="34" r="3" fill="#8b94b5"/><path d="M62 55L88 70 62 85Z" fill="#c6baff"/><path d="M12 111H141" stroke="#615e89" stroke-width="3"/></g>
+<text x="28" y="148" fill="#edf5ff" font-size="36" font-weight="700" letter-spacing="-1">The creative side</text>
+<text x="29" y="185" fill="#acc1d7" font-size="17">Mobile projects and visual storytelling,</text>
+<text x="29" y="211" fill="#acc1d7" font-size="17">brought together in one portfolio.</text>
+<path d="M29 239H551" stroke="#2a3d53"/>
+<text x="29" y="274" fill="#b0a4ff" font-size="14" class="mono">DEVELOPMENT · DESIGN · VIDEO</text>
+<path d="M526 272H547M538 263L547 272 538 281" stroke="#b0a4ff" stroke-width="2" fill="none"/>
+</svg>

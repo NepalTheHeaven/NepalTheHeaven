@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="580" height="310" viewBox="0 0 580 310" role="img" aria-labelledby="title desc">
+<title id="title">Saksi — Heritage experiences across Tirtha, Saksi, and Dhamma. UI &amp; team coordination.</title><desc id="desc">Original illustration for Nabin Paudel's GitHub profile.</desc>
+<style>text{font-family:Arial,Helvetica,sans-serif}.mono{font-family:Consolas,Menlo,monospace}@media(prefers-reduced-motion:reduce){*{animation:none!important}.role2,.role3{opacity:0!important}.role1{opacity:1!important}}</style>
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#112035"/><stop offset="1" stop-color="#0c1423"/></linearGradient></defs>
+<rect x="1" y="1" width="578" height="308" rx="18" fill="url(#bg)" stroke="#2a3d53"/>
+<path d="M29 42H65" stroke="#f0ca85" stroke-width="3"/>
+<text x="29" y="71" fill="#f0ca85" font-size="13" font-weight="700" letter-spacing="2">03 / HACKATHON WINNING TEAM</text>
+<g transform="translate(407 28)"><circle cx="77" cy="61" r="49" fill="#322d2a"/><path d="M54 28H100V55Q100 77 77 82Q54 77 54 55Z" fill="#54452f" stroke="#f0ca85" stroke-width="2"/><path d="M54 38H39V48Q39 64 57 65M100 38H115V48Q115 64 97 65M77 82V99M61 101H94" fill="none" stroke="#f0ca85" stroke-width="3"/><path d="M77 39L80 47 89 47 82 53 85 62 77 57 69 62 72 53 65 47 74 47" fill="#f5d9a4"/></g>
+<text x="28" y="148" fill="#edf5ff" font-size="36" font-weight="700" letter-spacing="-1">Saksi</text>
+<text x="29" y="185" fill="#acc1d7" font-size="17">Heritage experiences across Tirtha,</text>
+<text x="29" y="211" fill="#acc1d7" font-size="17">Saksi, and Dhamma. UI &amp; team coordination.</text>
+<path d="M29 239H551" stroke="#2a3d53"/>
+<text x="29" y="274" fill="#f0ca85" font-size="14" class="mono">REACT NATIVE · FASTAPI · SUPABASE</text>
+<path d="M526 272H547M538 263L547 272 538 281" stroke="#f0ca85" stroke-width="2" fill="none"/>
+</svg>

@@ -1,49 +1,50 @@
-<h1 align="center">Hi, I'm Nabin Paudel</h1>
-
-<p align="center"><strong>Mobile App Developer · UI Designer · Video Editor</strong><br />
-IT student from Nepal, building useful applications and telling stories through video.</p>
-
+<!-- Original graphics are stored in this repository. SVG animations respect reduced-motion preferences. -->
 <p align="center">
-  <a href="https://github.com/NepalTheHeaven/Portfolio">Explore my portfolio</a> ·
-  <a href="https://github.com/NepalTheHeaven?tab=repositories">Browse my repositories</a>
+  <img src="./assets/hero.svg" width="100%" alt="Nabin Paudel — Ideas into apps. Frames into stories. Mobile developer, UI designer, and video editor from Nepal." />
 </p>
 
----
+<p align="center">
+  <a href="https://github.com/NepalTheHeaven/Portfolio"><img src="./assets/portfolio-link.svg" height="40" alt="Explore portfolio" /></a>
+  &nbsp;
+  <a href="https://github.com/NepalTheHeaven?tab=repositories"><img src="./assets/repositories-link.svg" height="40" alt="Browse repositories" /></a>
+</p>
 
-### About me
+### A little about me
 
-I work at the intersection of software and visual design. My focus is mobile application development with Flutter, thoughtful UI implementation, and video editing with DaVinci Resolve.
+I'm **Nabin**, an IT student from Nepal working across **mobile development, UI design, and video editing**. I build with Flutter, shape stories in DaVinci Resolve, and enjoy bringing practical ideas to life through collaborative hackathons.
 
-I enjoy turning practical ideas into clear, usable experiences. Through application projects and collaborative hackathons, I explore how interface design, development, and teamwork come together to solve problems.
-
-### What I work with
-
-| Area | Tools and focus |
-| :--- | :--- |
-| Mobile development | Flutter, Dart, mobile UI implementation |
-| App backends | Firebase; project experience with FastAPI and Supabase |
-| Cross-platform projects | React Native |
-| Visual storytelling | DaVinci Resolve, video editing, colour grading, sound design |
-| Collaboration | Hackathon prototyping, UI design, team coordination |
+My contribution to **Saksi's national-level hackathon winning team** was UI design and overall team coordination. I care about how a product works, how it feels, and the details that connect the two.
 
 ### Selected work
 
-**[SafeGuard — Community Emergency Response](https://github.com/NepalTheHeaven/SOS_DISASTER_MANAGEMENT)**  
-A Flutter and Firebase application project with SOS flows, incident reporting, helper coordination, and an emergency directory. Uses Riverpod to connect the interface to repositories and services.
+<p>
+  <a href="https://github.com/NepalTheHeaven/SOS_DISASTER_MANAGEMENT"><img src="./assets/safeguard.svg" width="390" alt="SafeGuard — Flutter and Firebase emergency response project. View repository." /></a>
+  <a href="https://github.com/NepalTheHeaven/Portfolio"><img src="./assets/portfolio.svg" width="390" alt="Creative portfolio — mobile application projects and video editing work. View repository." /></a>
+</p>
+<p>
+  <a href="https://github.com/NepalTheHeaven/Portfolio#readme"><img src="./assets/saksi.svg" width="390" alt="Saksi — heritage application; UI design and team coordination for a national-level hackathon winning team. View portfolio repository." /></a>
+  <a href="https://github.com/NepalTheHeaven/Portfolio#readme"><img src="./assets/samadhan.svg" width="390" alt="Samadhan — guided local issue reporting with location, media, severity, and review. View portfolio repository." /></a>
+</p>
 
-**[Creative & Developer Portfolio](https://github.com/NepalTheHeaven/Portfolio)**  
-A responsive portfolio bringing together mobile application projects and video editing work, with app screenshots and before-and-after editing comparisons.
+<sub>Saksi and Samadhan cards link to the portfolio repository, which contains project screenshots and context. Illustrations are visual summaries, not app screenshots.</sub>
 
-### Hackathon experience
+### My toolkit
 
-**Saksi — National-level hackathon winning team**  
-Contributed UI design and overall team coordination for a heritage-focused application, working across its Tirtha, Saksi, and Dhamma experiences.
+<p>
+  <img src="./assets/flutter.svg" height="44" alt="Flutter" />
+  <img src="./assets/dart.svg" height="44" alt="Dart" />
+  <img src="./assets/firebase.svg" height="44" alt="Firebase" />
+  <img src="./assets/resolve.svg" height="44" alt="DaVinci Resolve" />
+</p>
+<p>
+  <img src="./assets/react-native.svg" height="44" alt="React Native" />
+  <img src="./assets/fastapi.svg" height="44" alt="FastAPI" />
+  <img src="./assets/supabase.svg" height="44" alt="Supabase" />
+</p>
 
-**Samadhan — Local issue reporting**  
-A mobile project exploring a guided reporting flow with location selection, media attachments, severity selection, and a final review step.
+**Core focus:** Flutter and mobile UI implementation, video editing, colour grading, and sound design.  
+**Project experience:** React Native, Firebase, FastAPI, and Supabase.
 
-Project screenshots and further context are available in my [portfolio repository](https://github.com/NepalTheHeaven/Portfolio).
+<br />
 
----
-
-<p align="center">Building thoughtful mobile experiences. Shaping stories with care.</p>
+<img src="./assets/footer.svg" width="100%" alt="Always learning. Always creating. Design, build, refine." />
