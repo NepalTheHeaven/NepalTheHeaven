@@ -1,0 +1,86 @@
+name: Refresh contribution snake
+
+on:
+  schedule:
+    - cron: '23 2 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/contribution-snake.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: contribution-snake
+  cancel-in-progress: false
+
+jobs:
+  snake:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Animate the contribution calendar
+        uses: Platane/snk/svg-only@d8f6715049803e982ee5ff501b6b9b7d5deeb09b # v3, pinned
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/snake.svg?palette=github-dark&color_snake=#b4a5ff&color_dots=#172535,#28566a,#367f92,#56b4b3,#8ee8d5
+
+      - name: Style and save the snake to the profile repository
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PROFILE_REPOSITORY: ${{ github.repository }}
+        shell: python
+        run: |
+          import base64
+          import datetime
+          import json
+          import os
+          import pathlib
+          import urllib.error
+          import urllib.request
+          import xml.etree.ElementTree as ET
+
+          ns = 'http://www.w3.org/2000/svg'
+          ET.register_namespace('', ns)
+          snake = ET.fromstring(pathlib.Path('dist/snake.svg').read_text())
+          viewbox = snake.attrib.get('viewBox', '0 0 880 192')
+          root = ET.Element(f'{{{ns}}}svg', {
+              'width': '1200', 'height': '380', 'viewBox': '0 0 1200 380',
+              'role': 'img', 'aria-labelledby': 'snake-title snake-desc'
+          })
+          ET.SubElement(root, f'{{{ns}}}title', {'id': 'snake-title'}).text = 'Nabin Paudel — animated GitHub contribution snake'
+          ET.SubElement(root, f'{{{ns}}}desc', {'id': 'snake-desc'}).text = 'A snake travels through the real GitHub contribution calendar. Updated daily.'
+          ET.SubElement(root, f'{{{ns}}}rect', {'x':'1','y':'1','width':'1198','height':'378','rx':'20','fill':'#101b2b','stroke':'#2a3d53'})
+          def label(x, y, value, size, color, weight='400'):
+              ET.SubElement(root, f'{{{ns}}}text', {'x':str(x),'y':str(y),'fill':color,'font-family':'Arial,Helvetica,sans-serif','font-size':str(size),'font-weight':weight}).text = value
+          label(42, 46, 'MY CONTRIBUTION TRAIL', 14, '#6ae4d1', '700')
+          label(42, 83, 'Small steps. Real progress.', 29, '#e5effb', '700')
+          snake.attrib.update({'x':'40','y':'105','width':'1120','height':'226','viewBox':viewbox})
+          root.append(snake)
+          date = datetime.datetime.now(datetime.timezone.utc).date().isoformat()
+          label(42, 351, 'GITHUB CONTRIBUTION CALENDAR', 12, '#90a9c0')
+          label(876, 351, 'UPDATED ' + date + ' UTC', 12, '#90a9c0')
+          # Keep the grid visible for readers who prefer reduced motion.
+          ET.SubElement(root, f'{{{ns}}}style').text = '@media(prefers-reduced-motion:reduce){*{animation:none!important}}'
+          payload = ET.tostring(root, encoding='utf-8', xml_declaration=True)
+          url = 'https://api.github.com/repos/' + os.environ['PROFILE_REPOSITORY'] + '/contents/assets/contribution-snake.svg'
+          headers = {'Authorization':'Bearer ' + os.environ['GH_TOKEN'], 'Accept':'application/vnd.github+json', 'X-GitHub-Api-Version':'2022-11-28', 'User-Agent':'profile-snake-workflow'}
+          data = {'message':'Refresh animated contribution snake [skip ci]', 'content':base64.b64encode(payload).decode(), 'branch':'main'}
+          try:
+              with urllib.request.urlopen(urllib.request.Request(url + '?ref=main', headers=headers)) as response:
+                  current = json.load(response)
+              if base64.b64decode(current['content']) == payload:
+                  print('Contribution snake is already current.')
+                  raise SystemExit(0)
+              data['sha'] = current['sha']
+          except urllib.error.HTTPError as error:
+              if error.code != 404:
+                  raise
+          request = urllib.request.Request(url, data=json.dumps(data).encode(), headers={**headers, 'Content-Type':'application/json'}, method='PUT')
+          with urllib.request.urlopen(request) as response:
+              result = json.load(response)
+          print('Updated assets/contribution-snake.svg at commit ' + result['commit']['sha'])
+
