@@ -22,11 +22,11 @@ My contribution to **Saksi's national-level hackathon winning team** was UI desi
   <a href="https://github.com/NepalTheHeaven/Portfolio"><img src="./assets/portfolio.svg" width="390" alt="Creative portfolio — mobile application projects and video editing work. View repository." /></a>
 </p>
 <p>
-  <a href="https://github.com/NepalTheHeaven/Portfolio#readme"><img src="./assets/saksi.svg" width="390" alt="Saksi — heritage application; UI design and team coordination for a national-level hackathon winning team. View portfolio repository." /></a>
-  <a href="https://github.com/NepalTheHeaven/Portfolio#readme"><img src="./assets/samadhan.svg" width="390" alt="Samadhan — guided local issue reporting with location, media, severity, and review. View portfolio repository." /></a>
+  <a href="https://github.com/LumbiniX-Committee/Everest"><img src="./assets/saksi.svg" width="390" alt="Saksi — heritage application; UI design and team coordination for a national-level hackathon winning team. View portfolio repository." /></a>
+  <a href="https://github.com/Codefest-chitwan-2026/Duvida"><img src="./assets/samadhan.svg" width="390" alt="Samadhan — guided local issue reporting with location, media, severity, and review. View portfolio repository." /></a>
 </p>
 
-<sub>Saksi and Samadhan cards link to the portfolio repository, which contains project screenshots and context. Illustrations are visual summaries, not app screenshots.</sub>
+<sub>Saksi and Samadhan cards open their respective project repositories. Illustrations are visual summaries, not app screenshots.</sub>
 
 ### My toolkit
 
